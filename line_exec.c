@@ -37,8 +37,7 @@ char **splitstring(char *str, const char *delim)
 	while (token)
 	{
 		token = strtok(NULL, delim);
-		array = _realloc(array, (sizeof(char *) * (wn - 1)), 
-				(sizeof(char *) * wn));
+		array = _realloc(array, (sizeof(char *) * (wn - 1)), (sizeof(char *) * wn));
 		array[i] = _strdup(token);
 		i++;
 		wn++;
