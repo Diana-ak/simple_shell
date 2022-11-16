@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * _getenv - gets the value of the global variable
+ * *_getenv - gets the value of the global variable
  * @name: name of the global variable
  * Return: string of value
  */
@@ -73,7 +73,7 @@ list_path *add_node_end(list_path **head, char *str)
 }
 
 /**
- * linkpath - creates a linked list for path directories
+ * *linkpath - creates a linked list for path directories
  * @path: string of path value
  * Return: pointer to the created linked list
  */
@@ -93,7 +93,7 @@ list_path *linkpath(char *path)
 }
 
 /**
- * _which - finds the pathname of a filename
+ * *_which - finds the pathname of a filename
  * @filename: name of file or command
  * @head: head of linked list of path directories
  * Return: pathname of filename or NULL if no match
